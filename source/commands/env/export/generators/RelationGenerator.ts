@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 import {
 	ResourceRead,
 	RelationRead,
-} from 'permitio/build/module/openapi/types';
+} from 'permitio/build/module/openapi/index.js';
 import he from 'he';
 
 const currentFilePath = fileURLToPath(import.meta.url);

@@ -48,6 +48,9 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# Generated test output
+test-output/
+
 # Logs
 logs
 *.log

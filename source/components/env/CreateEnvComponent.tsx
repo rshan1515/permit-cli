@@ -26,12 +26,7 @@ type CreateComponentProps = {
 
 // Define field IDs type for type safety
 type FieldId =
-	| 'name'
-	| 'key'
-	| 'description'
-	| 'customBranchName'
-	| 'jwks'
-	| 'settings';
+	'name' | 'key' | 'description' | 'customBranchName' | 'jwks' | 'settings';
 
 // FormField type definition
 type FormField = {
