@@ -49,6 +49,9 @@ const exitMock = vi
 describe('CloneComponent', () => {
 	beforeEach(() => {
 		vi.resetAllMocks();
+		exitMock.mockImplementation((code?: number) => {
+			return undefined as never;
+		});
 		mockSelectHandler = null;
 
 		// Default mock implementations

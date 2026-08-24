@@ -5,7 +5,6 @@ import delay from 'delay';
 import Check from '../source/commands/pdp/check';
 import * as keytar from 'keytar';
 import { useApiKeyApi } from '../source/hooks/useApiKeyApi';
-import { useApiKeyApi } from '../source/hooks/useApiKeyApi';
 
 const demoPermitKey = 'permit_key_'.concat('a'.repeat(97));
 

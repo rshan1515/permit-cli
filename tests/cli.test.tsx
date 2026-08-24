@@ -1,9 +1,11 @@
 import { describe, vi, expect, it } from 'vitest';
 
 vi.mock('pastel', () => ({
-	default: vi.fn().mockImplementation(() => ({
-		run: vi.fn(() => Promise.resolve()),
-	})),
+	default: vi.fn().mockImplementation(function MockPastel() {
+		return {
+			run: vi.fn(() => Promise.resolve()),
+		};
+	}),
 }));
 
 import Pastel from 'pastel';

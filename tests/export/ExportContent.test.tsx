@@ -6,7 +6,7 @@ import { getMockPermit, mockValidateApiKeyScope } from './mocks/permit.js';
 import { mockUseAuth } from './mocks/hooks';
 
 vi.mock('permitio', () => ({
-	Permit: vi.fn(() => {
+	Permit: vi.fn(function Permit() {
 		return getMockPermit();
 	}),
 }));

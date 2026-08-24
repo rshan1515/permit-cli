@@ -50,6 +50,7 @@ terraform.rc
 
 # Generated test output
 test-output/
+permit-graph.html
 
 # Logs
 logs
